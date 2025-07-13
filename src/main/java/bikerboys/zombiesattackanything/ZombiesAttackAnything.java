@@ -16,7 +16,7 @@ public class ZombiesAttackAnything implements ModInitializer {
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-	public static final TagKey<EntityType<?>> ZOMBIE_FRIENDLY = TagKey.of(RegistryKeys.ENTITY_TYPE, new Identifier(MOD_ID, "zombie_friendly_type"));
+	public static final TagKey<EntityType<?>> ZOMBIE_FRIENDLY = TagKey.of(RegistryKeys.ENTITY_TYPE, Identifier.of(MOD_ID, "zombie_friendly_type"));
 
 	@Override
 	public void onInitialize() {
